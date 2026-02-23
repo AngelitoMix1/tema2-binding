@@ -1,0 +1,19 @@
+<h2>Demostración de Data Binding</h2>
+
+<h3>Valor: {{ valor }}</h3>
+
+<label>
+  Paso:
+  <input type="number" [(ngModel)]="paso">
+</label>
+
+<br><br>
+
+<button (click)="dec()">-</button>
+<button (click)="inc()">+</button>
+
+<br><br>
+
+<div [title]="'Valor actual: ' + valor">
+  Pasa el mouse aquí
+</div>
